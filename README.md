@@ -1,5 +1,5 @@
 # Test Scores Analyzer
-Member 1, Member 2
+Kyle, Xander
 
 ## Test Scores Analyzer Description
 This program processes student test scores using dynamic memory allocation and pointers. It sorts the scores, calculates the average after dropping the lowest score, and saves the results to a file.
