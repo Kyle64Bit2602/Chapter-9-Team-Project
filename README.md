@@ -1,5 +1,5 @@
 # Test Scores Analyzer
-Member 1, Member 2
+Kyle , Xander Cole
 
 ## Test Scores Analyzer Description
 This program processes student test scores using dynamic memory allocation and pointers. It sorts the scores, calculates the average after dropping the lowest score, and saves the results to a file.
@@ -17,10 +17,15 @@ graph TD;
 
 #### Function Diagrams
 
-| `handle_input`    |               |  Member 1     |
+| `unique_ptr<int> getSize`    |               |  Xander     |
 | ------------------ | ------------- | ------------ |
-| `scores:int*`    | dynamically allocates memory for test scores  |              |
-| `validate:int`     | ensures input is non-negative  | returns valid input |
+|    | dynamically allocates memory for array size  |              |
+|    | ensures input is non-negative  | returns valid input |
+***
+| `unique_ptr<double[]> enterScores`    |               |  Xander     |
+| ------------------ | ------------- | ------------ |
+| `size:int*`    | dynamically allocates memory for test scores  |              |
+|    | ensures input is non-negative  | returns valid input array|
 ***
 | `sort_scores`    |               |  Member 2   |
 | ------------------ | ------------- | ------------ |
@@ -32,8 +37,15 @@ graph TD;
 | `scores:int*`    | calculates the average score after dropping the lowest  |              |
 | `size:int`     | determines number of scores  | returns average |
 ***
-| `display_and_save`    |               |  Member 2   |
+| `void saveData`    |               |  Xander   |
 | ------------------ | ------------- | ------------ |
-| `scores:int*`    | displays sorted scores on screen  |              |
-| `average:float`     | saves results to file  | outputs formatted data |
+| `double array[]`    | saves results to file results.txt  |              |
+| `int size`     |  | outputs formatted data to results.txt |
+| `double average`     |   |  |
+***
+| `void displayData`    |               |  Xander   |
+| ------------------ | ------------- | ------------ |
+| `double array[]`    | displays sorted scores on screen  |              |
+| `int size`     |  | outputs formatted data |
+| `double average`     |  |  |
 ***
