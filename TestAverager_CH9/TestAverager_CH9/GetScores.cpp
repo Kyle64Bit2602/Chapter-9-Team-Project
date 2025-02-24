@@ -1,6 +1,9 @@
 #include <iostream>
-#include "InputValidation.h"
 #include <memory>
+#include <fstream>
+#include <vector>
+#include <algorithm> // For std::swap and std::min_element
+#include "InputValidation.h"
 
 using namespace std;
 
