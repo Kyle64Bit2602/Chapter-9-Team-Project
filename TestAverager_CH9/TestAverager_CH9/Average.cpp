@@ -8,12 +8,13 @@ using namespace std;
 
 // Function to calculate the average of a vector of doubles
 //Only Works correctly if sorted first
-unique_ptr<double> calculate_average_no_smallest(unique_ptr<double[]> arr[], int size)
+unique_ptr<double> calculate_average_no_smallest(double arr[], int size)
 {
     unique_ptr<double> sum(new double);
-    for (int index = 1, *sum = 0; index < size; index++) {
-        *sum += (*arr)[index];
+    *sum = 0;
+    for (int index = 1; index < size; index++) {
+        *sum += arr[index];
     }
-    *sum /= static_cast<double>(size);
+    *sum /= static_cast<double>(size - 1);
     return sum;
 }

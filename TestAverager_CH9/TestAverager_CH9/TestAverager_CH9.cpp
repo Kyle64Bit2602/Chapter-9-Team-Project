@@ -4,10 +4,10 @@ using namespace std;
 
 unique_ptr<int> getSize();
 unique_ptr<double[]> enterScores(int);
-void saveData(unique_ptr<double[]>[], int, double);
-void displayData(unique_ptr<double[]>[], int, double);
-void quickSort(unique_ptr<double[]>[], int, int);
-double calculate_average_no_smallest(unique_ptr<double[]>[], int);
+void saveData(double[], int, double);
+void displayData(double[], int, double);
+void quickSort(double[], int, int);
+unique_ptr<double> calculate_average_no_smallest(double[], int);
 
 int main()
 {
@@ -21,9 +21,13 @@ int main()
     unique_ptr<double[]> data(new double[*size]);
     data = enterScores(*size);
 
-    quickSort(data, 0, *size);
+    quickSort(data.get(), 0, (*size-1));
 
     unique_ptr<double> average(new double);
-    *average = calculate_average_no_smallest(data, *size);
+    average = calculate_average_no_smallest(data.get(), *size);
     
+    displayData(data.get(), *size, *average);
+    saveData(data.get(), *size, *average);
+
+    return 0;
 }
