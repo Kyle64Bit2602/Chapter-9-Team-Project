@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void saveData(double array[], int size, double average)
+void saveData(unique_ptr<double[]> array[], int size, double average)
 {
 	ofstream dataFile;
 	dataFile.open("..\\..\\results.txt");

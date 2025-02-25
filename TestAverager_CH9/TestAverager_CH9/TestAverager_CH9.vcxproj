@@ -129,7 +129,6 @@
   <ItemGroup>
     <ClCompile Include="Average.cpp" />
     <ClCompile Include="Chapter9TeamProject.cpp" />
-    <ClCompile Include="DisplayData.cpp" />
     <ClCompile Include="DisplayResults.cpp" />
     <ClCompile Include="FileIO.cpp" />
     <ClCompile Include="GetScores.cpp" />

@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void displayData(double array[], int size, double average)
+void displayData(unique_ptr<double[]> array[], int size, double average)
 {
 	cout << "Sorted Grades\n";
 	cout << "-------------\n";
