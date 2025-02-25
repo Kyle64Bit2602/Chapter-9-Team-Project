@@ -1,6 +1,9 @@
 #include <iostream>
-#include "InputValidation.h"
 #include <memory>
+#include <fstream>
+#include <vector>
+#include <algorithm> // For std::swap and std::min_element
+#include "InputValidation.h"
 
 using namespace std;
 
@@ -9,7 +12,7 @@ unique_ptr<int> getSize()
     unique_ptr<int> size(new int);
 
     cout << "Number of grades: ";
-    validate_int(*size, "Enter a positive number: ", 0);
+    validate_int(*size, "Enter a positive number of at least 2: ", 2);
 
     return size;
 }

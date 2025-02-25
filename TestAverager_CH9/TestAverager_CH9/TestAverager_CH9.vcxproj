@@ -127,10 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="DisplayData.cpp" />
+    <ClCompile Include="Average.cpp" />
     <ClCompile Include="DisplayResults.cpp" />
     <ClCompile Include="FileIO.cpp" />
     <ClCompile Include="GetScores.cpp" />
+    <ClCompile Include="QuickSort.cpp" />
     <ClCompile Include="TestAverager_CH9.cpp" />
   </ItemGroup>
   <ItemGroup>

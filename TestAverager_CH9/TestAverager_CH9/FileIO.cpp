@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void saveData(double array[], int size, double average)
+void saveData(double arr[], int size, double average)
 {
 	ofstream dataFile;
 	dataFile.open("..\\..\\results.txt");
@@ -23,12 +23,12 @@ void saveData(double array[], int size, double average)
 
 		for (*index = 0; *index < size; *index += 1)
 		{
-			dataFile << fixed << setprecision(2) << array[*index] << "\n";
+			dataFile << fixed << setprecision(2) << arr[*index] << "\n";
 		}
 
 		dataFile << "\n";
-		dataFile << "Average\n";
-		dataFile << "-------------\n";
+		dataFile << "Average with lowest dropped\n";
+		dataFile << "---------------------------\n";
 		dataFile << fixed << setprecision(2) << average << "\n";
 	}
 
